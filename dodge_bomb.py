@@ -141,21 +141,21 @@ def main():
         for key, movement in move_dict.items():
             if key_lst[key]:
                 if movement[0] == 0 and movement[1] < 0:
-                    kk_img = kk_img_up
+                    kk_img = kk_img_up #上
                 elif movement[0] == 0 and movement[1] > 0:
-                    kk_img = kk_img_down
+                    kk_img = kk_img_down #下
                 if movement[0] > 0:
-                    kk_img = kk_img_left
+                    kk_img = kk_img_left #左
                 elif movement[0] < 0:
-                    kk_img = kk_img_right
+                    kk_img = kk_img_right #右
                 elif movement[0] < 0 and movement[1] < 0:
-                    kk_img = kk_img_up_left
+                    kk_img = kk_img_up_left #左上
                 elif movement[0] > 0 and movement[1] < 0:
-                    kk_img = kk_img_up_right
+                    kk_img = kk_img_up_right #右上
                 elif movement[0] < 0 and movement[1] > 0:
-                    kk_img = kk_img_down_left
+                    kk_img = kk_img_down_left #左下
                 elif movement[0] > 0 and movement[1] > 0:
-                    kk_img = kk_img_down_right
+                    kk_img = kk_img_down_right #右下
 
         # 画面の描画
         screen.blit(bg_img, [0, 0])
