@@ -39,7 +39,7 @@ def main():
         key_lst = pg.key.get_pressed()
         sum_mv = [0, 0]
         for k, tpl in delta.items():
-            if key_lst[k]:  # キーが押されたら
+            if key_lst[k]:  # キーが押されたとき
                 sum_mv[0] += tpl[0]
                 sum_mv[1] += tpl[1]
         
